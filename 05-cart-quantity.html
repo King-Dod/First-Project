@@ -22,6 +22,31 @@
         background-color: rgb(227, 67, 39);
         color: black;
       }
+
+      .brown-button{
+        background-color: rgba(227, 67, 39, 0.459);
+        color: black;
+      }
+
+      .yellow-button{
+        background-color: rgb(227, 224, 39);
+        color: black;
+      }
+
+      .black-button{
+        background-color: black;
+        color: antiquewhite;
+      }
+
+      .pink-button{
+        background-color: pink;
+        color: black;
+      }
+
+      .beige-button{
+        background-color: beige;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -38,14 +63,40 @@
     ">Add to Cart</button>
 
     <button title="Add 2 more items" class="blue-button" onclick="
-    // cartQuantity = cartQuantity + 2;
-    cartQuantity += 2;
-    console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
+      // cartQuantity = cartQuantity + 2;
+      cartQuantity += 2;
+     console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
 
     <button title="Add 3 more items" class="peach-button" onclick="
-    // cartQuantity = cartQuantity + 3;
-    cartQuantity += 3;
-    console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
+      // cartQuantity = cartQuantity + 3;
+      cartQuantity += 3;
+      console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
+
+    <button title="Add 4 more items" class="brown-button" onclick="
+      cartQuantity += 4;
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+4</button>
+
+    <button title="Add 5 more items" class="yellow-button" onclick="
+      cartQuantity += 5;
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <button title="Remove 3 items" class="beige-button" onclick="
+      // cartQuantity = cartQuantity + 3;
+      cartQuantity -= 3;
+      console.log(`Cart Quantity: ${cartQuantity}`);">-3</button> 
+
+    <button title="Remove 2 items" class="pink-button" onclick="
+      // cartQuantity = cartQuantity + 2;
+      cartQuantity -= 2;
+      console.log(`Cart Quantity: ${cartQuantity}`);">-2</button>
+
+    <button title="Remove 1 item" class="black-button" onclick="
+      // cartQuantity -= 1;
+      cartQuantity--;
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Remove from cart</button>
 
     <button title="Reset Cart" class="red-button" onclick="
       cartQuantity = 0;
