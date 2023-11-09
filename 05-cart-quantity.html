@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+      .green-button{
+        background-color: greenyellow;
+        color: black;
+      }
+
+      .blue-button{
+        background-color: rgb(169, 169, 214);
+        color: black;
+      }
+
+      .peach-button{
+        background-color: peachpuff;
+        color: black;
+      }
+
+      .red-button{
+        background-color: rgb(227, 67, 39);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Cart Quantity</h4>
+    <button title="Show Quantity" style="background-color: aliceblue;" onclick="
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button title="Add to Cart" class="green-button" onclick="
+      // cartQuantity = cartQuantity + 1;
+      // cartQuantity += 1;
+      cartQuantity++;
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to Cart</button>
+
+    <button title="Add 2 more items" class="blue-button" onclick="
+    // cartQuantity = cartQuantity + 2;
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
+
+    <button title="Add 3 more items" class="peach-button" onclick="
+    // cartQuantity = cartQuantity + 3;
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
+
+    <button title="Reset Cart" class="red-button" onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset')
+      console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+    <script>
+      let cartQuantity = 0;
+      // var cartQuantity = 0;
+
+      console.log(typeof cartQuantity);
+    </script>
+  </body>
+</html>
