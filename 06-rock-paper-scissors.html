@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      .brown {
+        background-color: brown;
+        color: whitesmoke;
+      }
+
+      .white {
+        background-color: whitesmoke;
+        color: brown;
+      }
+
+      .blue {
+        background-color: blue;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Rock Paper Scissors</h3>
+    <button class="brown" onclick="
+      const randomNumber = Math.random();
+
+      if (0 < randomNumber <= 0.3333333333) {
+        console.log(`The Computer picked rock, it's a draw`);
+      } else if (0.3333333333 < randomNumber <= 0.6666666666) {
+        console.log(`The Computer picked Paper, you lose`);
+      } else if (0.6666666666 < randomNumber < 1) {
+        console.log(`The Computer picked Scissors, you win`);
+      }
+    ">Rock</button>
+    <button class="white" onclick="
+      const randomNumber = Math.random();
+
+      if (0 < randomNumber <= 0.3333333333) {
+        console.log(`The Computer picked rock, you win!`);
+      } else if (0.3333333333 < randomNumber <= 0.6666666666) {
+        console.log(`The Computer picked Paper, it's a draw`);
+      } else if (0.6666666666 < randomNumber < 1) {
+        console.log(`The Computer picked Scissors, you lose`);
+      }
+    ">Paper</button>
+    <button class="blue" onclick="
+      const randomNumber = Math.random();
+
+      if (0 < randomNumber <= 0.3333333333) {
+        console.log(`The Computer picked rock, you lost`);
+      } else if (0.3333333333 < randomNumber <= 0.6666666666) {
+        console.log(`The Computer picked Paper, you win`);
+      } else if (0.6666666666 < randomNumber < 1) {
+        console.log(`The Computer picked Scissors, it's a draw`);
+      }
+    ">Scissors</button>
+    <script>
+      
+    </script>
+  </body>
+</html>
