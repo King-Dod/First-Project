@@ -23,33 +23,36 @@
     <h3>Rock Paper Scissors</h3>
     <button class="brown" onclick="
       const randomNumber = Math.random();
+      let computerMove = '';
 
       if (0 <= randomNumber && randomNumber < 1/3) {
-        console.log(`You picked Rock, The Computer picked Rock, it's a draw`);
+        computerMove = `You picked Rock, The Computer picked Rock, it's a draw`;
       } else if (1/3 <= randomNumber && randomNumber < 2/3) {
-        console.log(`You picked Rock, The Computer picked Paper, you lose`);
+        computerMove = `You picked Rock, The Computer picked Paper, you lose`;
       } else if (2/3 <= randomNumber && randomNumber < 1) {
-        console.log(`You picked Rock, The Computer picked Scissors, you win`);
+        computerMove = `You picked Rock, The Computer picked Scissors, you win`;
       }
+
+      console.log(computerMove);
       ">Rock</button>
     <button class="white" onclick="
       randomNumber = Math.random();
       if (0 <= randomNumber && randomNumber < 1/3) {
-        console.log(`You picked Paper, The Computer picked Rock, you win!`);
+        computerMove = `You picked Paper, The Computer picked Rock, you win!`;
       } else if (1/3 <= randomNumber && randomNumber < 2/3) {
-        console.log(`You picked Paper, The Computer picked Paper, it's a draw`);
+        computerMove = `You picked Paper, The Computer picked Paper, it's a draw`;
       } else if (2/3 <= randomNumber && randomNumber < 1) {
-        console.log(`You picked Paper, The Computer picked Scissors, you lose`);
+        computerMove = `You picked Paper, The Computer picked Scissors, you lose`;
       }
       ">Paper</button>
     <button class="blue" onclick="
       randomNumber = Math.random();
       if (0 <= randomNumber && randomNumber < 1/3) {
-        console.log(`You picked Scissors, The Computer picked rock, you lose`);
+        computerMove = `You picked Scissors, The Computer picked rock, you lose`;
       } else if (1/3 <= randomNumber && randomNumber < 2/3) {
-        console.log(`You picked Scissors, The Computer picked Paper, you win`);
+        computerMove = `You picked Scissors, The Computer picked Paper, you win`;
       } else if (2/3 <= randomNumber && randomNumber < 1) {
-        console.log(`You picked Scissors, The Computer picked Scissors, it's a draw`);
+        computerMove = `You picked Scissors, The Computer picked Scissors, it's a draw`;
       }
       ">Scissors</button>
     <script>
