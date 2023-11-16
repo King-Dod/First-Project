@@ -5,7 +5,9 @@
   </head>
   <body>
     <script>
-      let hour = 15;
+      let hour = Math.random();
+      hour = hour * 25;
+      hour = Math.floor(hour);
       let time = '';
 
       if (hour >= 6 && hour <= 12) {
