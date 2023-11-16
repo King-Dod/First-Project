@@ -40,6 +40,7 @@
       console.log(!false);
       */
 
+      /* 
       if (2) {
         console.log('truthy');
       } else {
@@ -53,6 +54,10 @@
       const notZero = !0;
 
       const textDivide = 'text'/3;
+
+      let variable1;
+      
+      let variable2 = 12/0;
 
       if (cartQuantity) {
         console.log ('cart has product');
@@ -71,6 +76,32 @@
       }
 
      console.log(textDivide);
+
+     console.log(variable1);
+
+     console.log(variable2);
+     */
+
+     const result = 0 ? 'truthy' : 'falsy';
+     console.log(result);
+
+     const yesValid = 4 < 5 ? 'I Love You Mary' : 'Let Us Pray!';
+     console.log(yesValid);
+
+     false && console.log('hello');
+
+     const message = false && 'hello';
+     console.log(message);
+
+     const message1 = 5 && 'hello';
+     console.log(message1);
+
+     const currency = 'EUR' || 'USD';
+     console.log(currency);
+
+     const currency1 = undefined || 'USD';
+     console.log(currency1);
+
     </script>
   </body>
 </html>
