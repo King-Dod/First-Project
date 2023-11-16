@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>6b</title>
+    <title>6c</title>
   </head>
   <body>
     <script>
+      const name = 'David';
+
       let hour = Math.random();
       hour = hour * 25;
       hour = Math.floor(hour);
       let time = '';
 
-      if (hour >= 6 && hour <= 12) {
+      if (hour >= 6 && hour < 12) {
         time = 'Good morning!';
-      } else if (hour >= 13 && hour <= 17) {
+      } else if (hour >= 12 && hour <= 17) {
         time = 'Good afternoon!';
       } else {
         time = 'Good night!';
       }
       
-      alert(hour);
+      alert(`${name}, the time is ${hour}:00, ${time}`);
       console.log(time);
     </script>
   </body>
