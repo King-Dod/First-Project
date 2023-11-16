@@ -58,27 +58,27 @@
     <button title="Add to Cart" class="green-button" onclick="
       // cartQuantity = cartQuantity + 1;
       // cartQuantity += 1;
-      cartQuantity++;
+      cartQuantity++ ? cartQuantity <= 10 : 'The cart is full';
       console.log(`Cart Quantity: ${cartQuantity}`);
     ">Add to Cart</button>
 
     <button title="Add 2 more items" class="blue-button" onclick="
       // cartQuantity = cartQuantity + 2;
-      cartQuantity += 2;
+      cartQuantity += 2 ? cartQuantity <= 10 : 'The cart is full';;
      console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
 
     <button title="Add 3 more items" class="peach-button" onclick="
       // cartQuantity = cartQuantity + 3;
-      cartQuantity += 3;
+      cartQuantity += 3 ? cartQuantity <= 10 : 'The cart is full';;
       console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
 
     <button title="Add 4 more items" class="brown-button" onclick="
-      cartQuantity += 4;
+      cartQuantity += 4 ? cartQuantity <= 10 : 'The cart is full';;
       console.log(`Cart Quantity: ${cartQuantity}`);
     ">+4</button>
 
     <button title="Add 5 more items" class="yellow-button" onclick="
-      cartQuantity += 5;
+      cartQuantity += 5 ? cartQuantity <= 10 : 'The cart is full';;
       console.log(`Cart Quantity: ${cartQuantity}`);
     ">+5</button>
 
@@ -105,6 +105,13 @@
     ">Reset Cart</button>
     <script>
       let cartQuantity = 0;
+      /* 
+      let checker = cartQuantity;
+
+      if (checker > 10) {
+        alert('The cart is full');
+      } else {}
+      */
       // var cartQuantity = 0;
 
       // console.log(typeof cartQuantity);
