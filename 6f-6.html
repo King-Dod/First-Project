@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      6f-6
+    </title>
+    <body>
+      <script>
+        const coinFlip = Math.random();
+        let result = '';
+
+        /*
+        if (coinFlip < 1/2) {
+          result = 'heads';
+        } else {
+          result = 'tails';
+        }
+        */
+        coinFlip < 1/2 ? result = 'heads' : result = 'tails';
+
+        const guess = 'heads'
+        
+        /*
+        if (result === guess) {
+          console.log('You Win!');
+        } else {
+          console.log('You Lose.');
+        }
+        */
+       result === guess ? console.log('You Win!') : console.log('You Lose.');
+      </script>
+    </body>
+  </head>
+</html>
