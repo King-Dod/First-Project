@@ -58,8 +58,11 @@
     <button title="Add to Cart" class="green-button" onclick="
       // cartQuantity = cartQuantity + 1;
       // cartQuantity += 1;
-      cartQuantity++ ? cartQuantity <= 10 : 'The cart is full';
-      console.log(`Cart Quantity: ${cartQuantity}`);
+      if (cartQuantity++ > 9) {
+        alert('The cart is full');
+       } else {
+        console.log(`Cart Quantity: ${cartQuantity}`);
+       }
     ">Add to Cart</button>
 
     <button title="Add 2 more items" class="blue-button" onclick="
