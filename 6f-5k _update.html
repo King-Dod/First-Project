@@ -125,18 +125,46 @@
 
     <button title="Remove 3 items" class="beige-button" onclick="
       // cartQuantity = cartQuantity + 3;
+      /* 
       cartQuantity -= 3;
-      console.log(`Cart Quantity: ${cartQuantity}`);">-3</button> 
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      */
+
+      if (cartQuantity - 3 < 0) {
+        alert('Not enough items in the cart');
+      } else {
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      }
+      ">-3</button>
 
     <button title="Remove 2 items" class="pink-button" onclick="
       // cartQuantity = cartQuantity + 2;
+      /* 
       cartQuantity -= 2;
-      console.log(`Cart Quantity: ${cartQuantity}`);">-2</button>
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      */
+
+      if (cartQuantity - 2 < 0) {
+        alert('Not enough items in the cart');
+      } else {
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      }
+      ">-2</button>
 
     <button title="Remove 1 item" class="black-button" onclick="
       // cartQuantity -= 1;
+      /*
       cartQuantity--;
-      console.log(`Cart Quantity: ${cartQuantity}`);
+      console.log(`Cart Quantity: ${cartQuantity}`)*/
+
+      if (cartQuantity - 1 < 0) {
+        alert('Not enough items in the cart');
+      } else {
+        cartQuantity --;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      }
     ">Remove from cart</button>
 
     <button title="Reset Cart" class="red-button" onclick="
