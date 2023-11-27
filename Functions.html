@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions++</title>
+  </head>
+  <body>
+    <script>
+      function printMe() {
+        console.log('printing...');
+      }
+
+      printMe('I Love Jesus');
+
+      function printThis(param) {
+        console.log(param);
+      }
+
+      printThis('tapas');
+
+      const printMeAgain = function() {
+        console.log('I Love MARY AGBON!');
+      }
+
+      printMeAgain();
+
+      function tryAgain(a, b) {
+        console.log(a, b);
+      }
+
+      tryAgain(10, 20);
+
+      function tryAgainNow(x) {
+        return x;
+      }
+
+      let p = tryAgainNow(12);
+      console.log(p);
+
+      console.log(p * 5);
+
+      function sum(s, t) {
+        return s + t;
+      }
+
+      console.log(sum(2,6));
+
+      function sub(o, p=0) {
+        let ret = o - p;
+        return ret;
+      }
+
+      console.log(sub(15, 12));
+
+      function collectThings(v, ...w) {
+        console.log(v);
+        console.log(w);
+      }
+
+      collectThings(1,2,3,4,5,5,5,6,6,7,8,9);
+
+      const add = (c,d) => {
+        return c + d;
+      }
+
+      console.log(add(2,3));
+
+      const minus = e => e;
+
+      console.log(minus(15));
+
+      var yes = '';
+
+      const outer = (g,h) => {
+        return yes = g * h;
+
+        const inner = function(i,j) {
+          return yes*(i/j);
+      }
+
+      console.log(inner(12,6));
+      console.log('I Love Mary Agbon!');
+      }
+
+      
+
+      console.log(outer(2,3));
+      console.log(outer);
+      console.log(outer(5,4));
+
+
+      function outside(k) {
+        function inside(l) {
+          return k+l;
+        }
+        return inside;
+      }
+
+      const outsideRet = outside(10);
+
+      console.log(outside);
+      console.log(outsideRet(2));
+    </script>
+  </body>
+</html>
