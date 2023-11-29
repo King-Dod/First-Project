@@ -69,22 +69,21 @@
       console.log(minus(15));
 
       var yes = '';
+      let scope = '';
 
       const outer = (g,h) => {
-        return yes = g * h;
-
         const inner = function(i,j) {
-          return yes*(i/j);
+          return scope = yes*(i/j);
       }
-
-      console.log(inner(12,6));
-      console.log('I Love Mary Agbon!');
+        return yes = g * h;
+        console.log(inner(12,4));
+        console.log('I Love Mary Agbon!');
       }
 
       
 
       console.log(outer(2,3));
-      console.log(outer);
+      console.log(outer());
       console.log(outer(5,4));
 
 
@@ -97,7 +96,7 @@
 
       const outsideRet = outside(10);
 
-      console.log(outside);
+      console.log(outside());
       console.log(outsideRet(2));
     </script>
   </body>
