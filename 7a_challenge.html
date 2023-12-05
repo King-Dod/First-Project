@@ -7,6 +7,9 @@
     <script>
       function greet(name) {
         console.log(`Hello ${name}!`);
+        if (!name) {
+          console.log('Hi there!');
+        }
       }
 
       greet('Simon');
