@@ -16,6 +16,32 @@
       greet('Simon');
       greet('Jesus');
       greet();
+
+      let Fahrenheit = '';
+
+      function convertToFahrenheit(celsius) {
+        Fahrenheit = (celsius * 9/5) + 32;
+
+        console.log(`${Fahrenheit}°F`);
+
+        return Fahrenheit;
+      }
+
+      convertToFahrenheit(25);
+      convertToFahrenheit(95);
+
+      let Celsius = '';
+
+      function convertToCelsius(fahrenheit) {
+        Celsius = (fahrenheit - 32) * 5/9;
+
+        console.log(`${Celsius}°C`);
+
+        return Celsius;
+      }
+
+      convertToCelsius(25);
+      convertToCelsius(140);
     </script>
   </body>
 </html>
