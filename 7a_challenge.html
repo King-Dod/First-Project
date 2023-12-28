@@ -19,7 +19,7 @@
 
       let Fahrenheit = '';
 
-      function convertToFahrenheit(celsius) {
+      /** function convertToFahrenheit(celsius) {
         Fahrenheit = (celsius * 9/5) + 32;
 
         console.log(`${Fahrenheit}°F`);
@@ -28,11 +28,11 @@
       }
 
       convertToFahrenheit(25);
-      convertToFahrenheit(95);
+      convertToFahrenheit(95); **/
 
       let Celsius = '';
 
-      function convertToCelsius(fahrenheit) {
+      /** function convertToCelsius(fahrenheit) {
         Celsius = (fahrenheit - 32) * 5/9;
 
         console.log(`${Celsius}°C`);
@@ -41,7 +41,32 @@
       }
 
       convertToCelsius(25);
-      convertToCelsius(140);
+      convertToCelsius(140); **/
+
+      let unit = '';
+
+      function convertTemperature(degree, unit) {
+        if (unit = 'C') {
+          function convertToFahrenheit(celsius) {
+            Fahrenheit = (celsius * 9/5) + 32;
+
+            console.log(`${Fahrenheit}°F`);
+
+            return Fahrenheit;
+          }
+        } else if (unit = 'F') {
+          function convertToCelsius(fahrenheit) {
+            Celsius = (fahrenheit - 32) * 5/9;
+
+            console.log(`${Celsius}°C`);
+
+            return Celsius;
+          }
+        }
+      }
+
+      convertTemperature(25,'C');
+      convertTemperature(86,'F');
     </script>
   </body>
 </html>
