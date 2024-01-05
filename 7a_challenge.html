@@ -5,7 +5,7 @@
   </head>
   <body>
     <script>
-      function greet(name) {
+      /** function greet(name) {
         
         if (!name) {
           console.log('Hi there!');
@@ -15,54 +15,44 @@
 
       greet('Simon');
       greet('Jesus');
-      greet();
+      greet();**/
 
       let Fahrenheit = '';
 
-      /** function convertToFahrenheit(celsius) {
+      function convertToFahrenheit(celsius) {
         Fahrenheit = (celsius * 9/5) + 32;
 
-        console.log(`${Fahrenheit}°F`);
+        // console.log(`${Fahrenheit}°F`);
 
         return Fahrenheit;
       }
 
       convertToFahrenheit(25);
-      convertToFahrenheit(95); **/
+      convertToFahrenheit(30);
 
       let Celsius = '';
 
-      /** function convertToCelsius(fahrenheit) {
+      function convertToCelsius(fahrenheit) {
         Celsius = (fahrenheit - 32) * 5/9;
 
-        console.log(`${Celsius}°C`);
+        // console.log(`${Celsius}°C`);
 
         return Celsius;
       }
 
-      convertToCelsius(25);
-      convertToCelsius(140); **/
+      convertToCelsius(77);
+      convertToCelsius(86);
 
       let unit = '';
 
-      function convertTemperature(degree, unit) {
-        if (unit = 'C') {
-          function convertToFahrenheit(celsius) {
-            Fahrenheit = (celsius * 9/5) + 32;
-
-            console.log(`${Fahrenheit}°F`);
-
-            return Fahrenheit;
-          }
-        } else if (unit = 'F') {
-          function convertToCelsius(fahrenheit) {
-            Celsius = (fahrenheit - 32) * 5/9;
-
-            console.log(`${Celsius}°C`);
-
-            return Celsius;
-          }
-        }
+      function convertTemperature(degrees, unit) {
+        if (unit === 'C') {
+          console.log(`${convertToFahrenheit(degrees)}F`);
+            return degrees;
+        } else if (unit === 'F') {
+          console.log(`${convertToCelsius(degrees)}C`);
+          return degrees;
+        } 
       }
 
       convertTemperature(25,'C');
