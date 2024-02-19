@@ -58,18 +58,16 @@
 
       <button onclick="
       updateCalculation(' * ');
-    ">*</button>
+    ">X</button>
     </p>
     
     <p>
       <button onclick="
-      calculation += '0';
-      console.log(calculation);
+      updateCalculation('0');
     ">0</button>
 
       <button onclick="
-      calculation += ' . ';
-      console.log(calculation);
+      updateCalculation(' . ');
     ">.</button>
 
       <button onclick="
@@ -78,9 +76,8 @@
     ">=</button>
 
       <button onclick="
-      calculation += ' / ';
-      console.log(calculation);
-    ">/</button>
+      updateCalculation(' / ');
+    ">÷</button>
     </p>
     
     <button onclick="
